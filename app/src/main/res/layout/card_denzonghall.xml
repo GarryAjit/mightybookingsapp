@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:cardBackgroundColor="#8000">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DenzongHall(Gangtok)"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView34"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView34"
+                android:orientation="horizontal"
+                android:id="@+id/lin1"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/padman"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1.21"
+                    android:id="@+id/imageView2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin1"
+                android:text="Lakshmi is a newly married welder who causes a stir in his East Indian village when he tries to revolutionize the manufacturing of sanitary napkins for women."
+                android:lines="4"
+                android:textColor="#fff"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:id="@+id/tv2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:text="Watch Trailer"
+                android:textColor="#06f20e"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:id="@+id/tv3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:00 AM"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="#11eef2"
+                    android:textSize="20sp"
+                    android:layout_weight="0.5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02:15 AM"
+                    android:textAlignment="center"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="#11eef2"
+                    android:textSize="20sp"
+                    android:layout_weight="0.5" />
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin2"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="book now"
+                android:background="@drawable/rounded_button"
+                android:textColor="#11eef2"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

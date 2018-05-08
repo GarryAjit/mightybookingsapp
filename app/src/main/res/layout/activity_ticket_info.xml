@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ticket_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.mvvivek.mightybookings.ticket_info">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text=""
+        android:textColor="#f1282622"
+        android:id="@+id/textView10"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_bias="0.120000005"
+        app:layout_constraintTop_toTopOf="@+id/appbarlayout" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:background="@drawable/rounded_button"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textColor="#2a5b46"
+        android:id="@+id/button2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:layout_width="202dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dialog"
+        android:id="@+id/spinner2"
+        android:background="#e0f0f8ff"
+        android:alpha="0.7"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3"
+        app:layout_constraintLeft_toRightOf="@+id/imageView4"></Spinner>
+
+    <Spinner
+        android:layout_width="202dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dialog"
+        android:background="#e0f0f8ff"
+        android:alpha="0.7"
+        android:id="@+id/spinner"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintLeft_toRightOf="@+id/imageView">
+
+
+    </Spinner>
+
+    <Spinner
+        android:layout_width="202dp"
+        android:layout_height="40dp"
+        android:background="#e0f0f8ff"
+
+        android:alpha="0.7"
+        android:spinnerMode="dialog"
+
+        android:id="@+id/spinner4"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintLeft_toRightOf="@+id/imageView5"></Spinner>
+
+    <Spinner
+        android:layout_width="202dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinner3"
+        android:spinnerMode="dialog"
+
+        android:background="#e0f0f8ff"
+        android:alpha="0.7"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintLeft_toRightOf="@+id/imageView3"></Spinner>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="344dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_gray_border_bottom"
+        android:id="@+id/appbarlayout"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="339dp"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/mb1"
+                    android:background="#53E3A6"
+                    android:id="@+id/logo"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:id="@+id/mighty1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/logo"
+                    android:layout_marginLeft="15dp"
+                    android:text="MightyBookings"
+                    android:textColor="#000"
+                    android:textSize="20sp"/>
+
+
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_seatclass"
+        android:id="@+id/imageView"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_noofseats"
+        android:id="@+id/imageView3"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_timeslot"
+        android:id="@+id/imageView4"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_date"
+        android:id="@+id/imageView5"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>

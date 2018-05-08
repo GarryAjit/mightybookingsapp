@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mighty Bookings</string>
+    <string name="seat_class">Select your seat class</string>
+    <string name="ruppee" translatable="false">\uD83D\uDCE1</string>
+</resources>
